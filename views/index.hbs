@@ -1,0 +1,43 @@
+<h1>{{title}}</h1>
+<form action="/insertUser"  method="post" enctype="multipart/form-data">
+    <li>
+        <p>Tên</p>
+        <input name="name" >
+    </li>
+    <li>
+        <p>Số Điện Thoại</p>
+        <input name="sdt"  type="number" >
+    </li>
+    <li>
+        <p>Thời Gian</p>
+        <input name="time" type="datetime-local" >
+    </li>
+
+
+    <li>
+        <p>Ghi Chú</p>
+        <input name="note"  >
+    </li>
+<br>
+
+    <li>
+        <button type="submit">
+            Đặt
+        </button>
+    </li>
+
+    <h1>
+        Danh Sách Khách Đặt
+    </h1>
+{{#each users}}
+
+    <p>Tên:</p><div>{{this.name}}</div>
+    <p>Số Điện Thoại:</p><div>{{this.sdt}}</div>
+    <p>Giờ:</p><div>{{this.time}}</div>
+    <p>Ghi Chú:</p><div>{{this.note}}</div>
+
+
+<br>
+<hr />
+    {{/each}}
+</form>
