@@ -1,26 +1,20 @@
 {
   "name": "bai7",
   "version": "1.0.0",
-  "description": "k co gi",
-  "main": "app.js",
-  "dependencies": {
-    "hbs": "^4.1.1",
-    "mongoose": "^5.12.5",
-    "multer": "^1.4.2"
-  },
-  "devDependencies": {},
+  "description": "gi cung dc",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./bin/www"
+    "start": "node index",
+    "test": "node index"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/theanh2311/schedule_Hungbarber.git"
-  },
-  "author": "NTA2K",
+  "keywords": [
+    "k",
+    "co"
+  ],
+  "author": "nta2k",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/theanh2311/schedule_Hungbarber/issues"
-  },
-  "homepage": "https://github.com/theanh2311/schedule_Hungbarber#readme"
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0"
+  }
 }
